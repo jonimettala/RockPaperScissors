@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wtf.joni.rockpaperscissors.GameActivity"
+    android:orientation="horizontal"
+    android:onClick="clicked">
+
+    <TextView
+        android:id="@+id/game_center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Tap to play!"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/game_center_text"
+        android:text="Tap screen to choose your weapon!"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/computer_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Computer - 0"/>
+
+    <ImageView
+        android:id="@+id/computer_weapon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/computer_score" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="0 - Player"/>
+
+    <ImageView
+        android:id="@+id/player_weapon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/player_score"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
